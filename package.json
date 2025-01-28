@@ -1,0 +1,21 @@
+{
+  "name": "minimal-bundler",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run tsx src/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "tsx": "^4.19.2",
+    "viem": "^2.22.16"
+  }
+}
