@@ -21,7 +21,7 @@ This project is a minimal bundler node capable of accepting ERC-4337 UserOperati
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/craterface77/minimal-bundler.git
 cd minimal-bundler
 ```
 
