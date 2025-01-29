@@ -1,11 +1,13 @@
 import express from "express";
-import { env } from "./config/env";
+import { bundlerRouter } from "./modules/bundler/bundler.routes";
 
 async function main() {
   const app = express();
   app.use(express.json());
 
-  const port = Number(env.PORT) || 3000;
+  app.use("/", bundlerRouter);
+
+  const port = 3000;
   app.listen(port, () => {
     console.log(`Bundler listening on http://localhost:${port}`);
   });
